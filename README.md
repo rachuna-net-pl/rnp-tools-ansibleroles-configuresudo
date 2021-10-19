@@ -3,7 +3,7 @@ rnp-tools-ansible-roles-configuresudo
 
 Configuration Sudo roles
 
-![Overwiew](docs/configurationSudo.png)
+![Overwiew](https://gitlab.com/rachuna-net.pl/tools/ansibleroles/rnp-tools-ansibleroles-configuresudo/-/raw/master/docs/configurationSudo.png)
 
 Role Variables
 --------------
