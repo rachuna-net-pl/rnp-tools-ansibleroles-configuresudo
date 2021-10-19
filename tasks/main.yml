@@ -1,7 +1,3 @@
----
-- name: Debug
-  debug:
-    msg: "{{ input_role_os_distribution }}"
 - name: "[Ubuntu] Set NOPASSWD in sudo group"
   lineinfile:
     dest: "{{ vars_role_sudo_config_path }}" 
@@ -19,6 +15,15 @@
     state: present
   when:
     - input_role_os_distribution == "CentOS"
+
+- name: "[CentOS] Set NOPASSWD in wheel group"
+  lineinfile:
+    dest: "{{ vars_role_sudo_config_path }}" 
+    regexp: '^#?%wheel'
+    line: "%wheel	ALL=(ALL:ALL) NOPASSWD:ALL"
+    state: present
+  when:
+    - input_role_os_distribution == "RedHat"
 
 - name: "[Ubuntu] Set NOPASSWD in custom groups"
   lineinfile:
