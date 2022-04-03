@@ -5,6 +5,8 @@ Configuration Sudo roles
 
 ![Overwiew](https://raw.githubusercontent.com/rachuna-net-pl/rnp-tools-ansibleroles-configuresudo/master/docs/configurationSudo.png)
 
+[Changelog](CHANGELOG.md)
+
 Role Variables
 --------------
 
